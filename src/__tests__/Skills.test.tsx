@@ -1,0 +1,33 @@
+import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import Skills from '../components/Skills/Skills';
+
+describe('Skills Component', () => {
+  it('should render section title', () => {
+    render(<Skills />);
+    expect(screen.getByText('Skills')).toBeInTheDocument();
+  });
+
+  it('should render skill categories', () => {
+    render(<Skills />);
+    expect(screen.getByText('Languages')).toBeInTheDocument();
+    expect(screen.getByText('Frontend')).toBeInTheDocument();
+    expect(screen.getByText('Backend')).toBeInTheDocument();
+    expect(screen.getByText('Tools & Platforms')).toBeInTheDocument();
+  });
+
+  it('should render skills within categories', () => {
+    render(<Skills />);
+    expect(screen.getByText('JavaScript')).toBeInTheDocument();
+    expect(screen.getByText('React')).toBeInTheDocument();
+    expect(screen.getByText('Node.js')).toBeInTheDocument();
+    expect(screen.getByText('Git')).toBeInTheDocument();
+  });
+
+  it('should render skill icons', () => {
+    render(<Skills />);
+    // Check that emoji icons are rendered
+    const icons = screen.getAllByText(/[📜🔷🐍🎨⚛️▲]/);
+    expect(icons.length).toBeGreaterThan(0);
+  });
+});
