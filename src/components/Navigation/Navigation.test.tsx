@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import Navigation from '../components/Navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
 
 describe('Navigation Component', () => {
   it('should render navigation menu items', () => {
