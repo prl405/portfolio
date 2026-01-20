@@ -6,16 +6,6 @@ export interface ExperienceItem {
   type: 'work' | 'education';
 }
 
-export interface SkillCategory {
-  name: string;
-  items: Skill[];
-}
-
-export interface Skill {
-  name: string;
-  icon: string;
-}
-
 export interface Project {
   title: string;
   description: string;

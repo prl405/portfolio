@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './About.css';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const About: React.FC = () => {
   return (
@@ -29,7 +31,7 @@ const About: React.FC = () => {
                 className="social-button"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+              ><FontAwesomeIcon icon={faLinkedin} />
                 LinkedIn
               </a>
               <a
@@ -37,7 +39,7 @@ const About: React.FC = () => {
                 className="social-button"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
+              ><FontAwesomeIcon icon={faGithub} />
                 GitHub
               </a>
             </div>

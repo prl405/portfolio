@@ -1,20 +1,25 @@
 import { useState } from 'react';
 import './Navigation.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faGear, faRocket, faUser, type IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 interface NavItem {
   label: string;
   icon: string;
   id: string;
+  fa: IconDefinition;
+  color: string;
 }
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // TODO: Reconsider emojis
   const navItems: NavItem[] = [
-    { label: 'About', icon: '👤', id: 'about' },
-    { label: 'Experience', icon: '💼', id: 'experience' },
-    { label: 'Skills', icon: '⚙️', id: 'skills' },
-    { label: 'Projects', icon: '🚀', id: 'projects' },
+    { label: 'About', icon: '👤', id: 'about', fa: faUser, color: 'black' },
+    { label: 'Experience', icon: '💼', id: 'experience', fa: faBriefcase, color: 'brown' },
+    { label: 'Skills', icon: '⚙️', id: 'skills', fa: faGear, color: 'grey' },
+    { label: 'Projects', icon: '🚀', id: 'projects', fa: faRocket, color: 'red' },
   ];
 
   const handleScroll = (id: string) => {
@@ -37,7 +42,8 @@ const Navigation: React.FC = () => {
                 className="nav-button"
                 onClick={() => handleScroll(item.id)}
               >
-                <span className="nav-icon">{item.icon}</span>
+                <FontAwesomeIcon icon={item.fa} color={item.color} />
+                {/* <span className="nav-icon">{item.icon}</span> */}
                 <span>{item.label}</span>
               </button>
             ))}
@@ -65,7 +71,8 @@ const Navigation: React.FC = () => {
               className="nav-button"
               onClick={() => handleScroll(item.id)}
             >
-              <span className="nav-icon">{item.icon}</span>
+              <FontAwesomeIcon icon={item.fa} color={item.color} />
+              {/* <span className="nav-icon">{item.icon}</span> */}
               <span>{item.label}</span>
             </button>
           ))}
