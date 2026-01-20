@@ -43,12 +43,13 @@ const Projects: React.FC = () => {
       description:
         'Real-time chat application with AI-powered suggestions and natural language processing.',
       tags: ['React', 'WebSocket', 'Python', 'OpenAI API'],
-      repoUrl: 'https://github.com',
     },
   ];
 
-  const handleProjectClick = (repoUrl: string) => {
-    window.open(repoUrl, '_blank');
+  const handleProjectClick = (repoUrl?: string) => {
+    if (repoUrl != undefined) {
+      window.open(repoUrl, '_blank');
+    }
   };
 
   return (

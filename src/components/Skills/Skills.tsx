@@ -1,21 +1,8 @@
-// import type { SkillCategory } from '../../types';
-import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import './Skills.css';
 import { faAws, faDocker, faGit, faHtml5, faJs, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faBolt, faBullseye, faDatabase, faDiamond, faRecycle, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-interface Skill {
-  name: string;
-  icon: string;
-  fa?: IconDefinition;
-  color?: string;
-}
-
-interface SkillCategory {
-  name: string;
-  items: Skill[];
-}
+import type { SkillCategory } from '../../types';
 
 const Skills: React.FC = () => {
   // TODO: Remove emojis

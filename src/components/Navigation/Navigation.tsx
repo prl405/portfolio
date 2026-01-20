@@ -1,15 +1,8 @@
 import { useState } from 'react';
 import './Navigation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faGear, faRocket, faUser, type IconDefinition } from '@fortawesome/free-solid-svg-icons';
-
-interface NavItem {
-  label: string;
-  icon: string;
-  id: string;
-  fa: IconDefinition;
-  color: string;
-}
+import { faBriefcase, faGear, faRocket, faUser } from '@fortawesome/free-solid-svg-icons';
+import type { NavItem } from '../../types';
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
