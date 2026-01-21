@@ -18,8 +18,7 @@ export interface Project {
 
 interface Skill {
   name: string;
-  icon: string;
-  fa?: IconDefinition;
+  fa: IconDefinition;
   color?: string;
 }
 
@@ -30,7 +29,6 @@ export interface SkillCategory {
 
 export interface NavItem {
   label: string;
-  icon: string;
   id: string;
   fa: IconDefinition;
   color: string;

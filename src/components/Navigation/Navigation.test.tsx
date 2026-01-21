@@ -9,6 +9,9 @@ describe('Navigation Component', () => {
     expect(screen.getByText('Experience')).toBeInTheDocument();
     expect(screen.getByText('Skills')).toBeInTheDocument();
     expect(screen.getByText('Projects')).toBeInTheDocument();
+
+    const icons = screen.getAllByRole('img', { hidden: true });
+    expect(icons.length).toBe(4);
   });
 
   it('should have hamburger menu button', () => {

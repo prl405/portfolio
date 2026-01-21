@@ -25,10 +25,10 @@ describe('Skills Component', () => {
   });
 
   // TODO: Now uses fontawsome
-  // it('should render skill icons', () => {
-  //   render(<Skills />);
-  //   // Check that emoji icons are rendered
-  //   const icons = screen.getAllByText(/[📜🔷🐍🎨⚛️▲]/);
-  //   expect(icons.length).toBeGreaterThan(0);
-  // });
+  it('should render skill icons', () => {
+    render(<Skills />);
+    // Check that fontawsome icons are rendered
+    const icons = screen.getAllByRole('img', { hidden: true });
+    expect(icons.length).toBeGreaterThan(0);
+  });
 });

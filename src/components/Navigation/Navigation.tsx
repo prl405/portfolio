@@ -9,10 +9,10 @@ const Navigation: React.FC = () => {
 
   // TODO: Reconsider emojis
   const navItems: NavItem[] = [
-    { label: 'About', icon: '👤', id: 'about', fa: faUser, color: 'black' },
-    { label: 'Experience', icon: '💼', id: 'experience', fa: faBriefcase, color: 'brown' },
-    { label: 'Skills', icon: '⚙️', id: 'skills', fa: faGear, color: 'grey' },
-    { label: 'Projects', icon: '🚀', id: 'projects', fa: faRocket, color: 'red' },
+    { label: 'About', id: 'about', fa: faUser, color: 'black' },
+    { label: 'Experience', id: 'experience', fa: faBriefcase, color: 'brown' },
+    { label: 'Skills', id: 'skills', fa: faGear, color: 'grey' },
+    { label: 'Projects', id: 'projects', fa: faRocket, color: 'red' },
   ];
 
   const handleScroll = (id: string) => {
