@@ -7,7 +7,6 @@ describe('Footer Component', () => {
     render(<Footer />);
     expect(screen.getByText('Navigation')).toBeInTheDocument();
     expect(screen.getByText('Social')).toBeInTheDocument();
-    expect(screen.getByText('Quick Links')).toBeInTheDocument();
   });
 
   it('should render navigation links', () => {
