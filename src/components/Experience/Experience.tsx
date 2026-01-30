@@ -30,7 +30,7 @@ const Experience: React.FC = () => {
       company: 'University of Bristol',
       period: '2017 - 2020',
       achievements: [
-        'Learnt how to solve complex and absract problems with absolute clarity and rigor',
+        'Learnt how to solve complex and abstract problems with absolute clarity and rigor',
         'Key modules: Logic, Statistics, Linear Algebra, Generalised Linear Models',
       ],
     },
