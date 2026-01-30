@@ -1,6 +1,6 @@
 import './Skills.css';
-import { faAws, faDocker, faGit, faHashnode, faHtml5, faJava, faJs, faNode, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faBolt, faBullseye, faC, faChartBar, faDatabase, faDiamond, faEnvelopeOpenText, faLeaf, faLineChart, faRecycle, faRocket, faT, faTicket } from '@fortawesome/free-solid-svg-icons';
+import { faGit, faHashnode, faHtml5, faJava, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBolt, faChartBar, faDatabase, faDiamond, faLeaf, faLineChart, faT, faTicket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { SkillCategory } from '../../types';
 

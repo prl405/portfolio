@@ -29,7 +29,7 @@
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -40,6 +40,7 @@
   border-color: #000000;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   transform: translateY(-8px);
+  cursor: default;
 }
 
 .project-image-placeholder {
@@ -145,6 +146,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .project-card:hover .project-overlay {

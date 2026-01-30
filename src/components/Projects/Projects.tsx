@@ -86,9 +86,11 @@ const Projects: React.FC = () => {
                 </div>
               </div>
 
-              <div className="project-overlay">
-                <span className="view-repo">View on GitHub →</span>
-              </div>
+                {project.repoUrl && (
+                  <div className="project-overlay">
+                    <span className="view-repo">View on GitHub →</span>
+                  </div>
+                )}
             </div>
           ))}
         </div>
