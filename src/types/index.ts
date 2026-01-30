@@ -5,7 +5,6 @@ export interface ExperienceItem {
   company: string;
   period: string;
   achievements: string[];
-  type: 'work' | 'education';
 }
 
 export interface Project {

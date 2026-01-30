@@ -8,25 +8,21 @@ describe('Experience Component', () => {
     expect(screen.getByText('Experience')).toBeInTheDocument();
   });
 
-  it('should render work experience items', () => {
+  it('should render timeline title items', () => {
     render(<Experience />);
-    expect(screen.getByText('Senior Software Engineer')).toBeInTheDocument();
-    expect(screen.getByText('Full Stack Developer')).toBeInTheDocument();
-  });
-
-  it('should render education items', () => {
-    render(<Experience />);
-    expect(screen.getByText(/Bachelor of Science in Computer Science/)).toBeInTheDocument();
+    expect(screen.getByText(/Master of Science in Applied Mathematics/)).toBeInTheDocument();
+    expect(screen.getByText('Junior Software Engineer')).toBeInTheDocument();
+    expect(screen.getByText('Bachelor of Science in Mathematics')).toBeInTheDocument();
   });
 
   it('should render company information', () => {
     render(<Experience />);
-    expect(screen.getByText('Tech Company Inc.')).toBeInTheDocument();
-    expect(screen.getByText('Digital Solutions Ltd.')).toBeInTheDocument();
+    expect(screen.getByText('Sparta Global')).toBeInTheDocument();
+    expect(screen.getAllByText('University of Bristol')).toHaveLength(2);
   });
 
   it('should render achievement bullets', () => {
     render(<Experience />);
-    expect(screen.getByText(/Led development of microservices/)).toBeInTheDocument();
+    expect(screen.getByText(/Developed and maintained customer-facing APIs and UIs using Java with Spring Boot and JavaScript with React, serving millions of banking customers/)).toBeInTheDocument();
   });
 });

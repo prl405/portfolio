@@ -7,35 +7,31 @@ const Experience: React.FC = () => {
 
   const experiences: ExperienceItem[] = [
     {
-      title: 'Senior Software Engineer',
-      company: 'Tech Company Inc.',
-      period: '2022 - Present',
-      type: 'work',
+      title: 'Master of Science in Applied Mathematics',
+      company: 'University of Bristol',
+      period: '2023 - 2024',
       achievements: [
-        'Led development of microservices architecture serving 100k+ users',
-        'Improved application performance by 40% through optimization',
-        'Mentored 5 junior developers',
+        'Improve on analytical problem solving focusing on approaches which use data and computation',
+        'Master\'s project: Recreated a niche Baysian Hamiltonian Monte Carlo sampler in Julia to compare performance through clear visualisations and metrics',
+        'Key modules: Artificial Intelligence, Scientific Computing, Mathematical Data Modelling, Intelligent Information Systems',
       ],
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Solutions Ltd.',
-      period: '2020 - 2022',
-      type: 'work',
+      title: 'Junior Software Engineer',
+      company: 'Sparta Global',
+      period: '2021 - 2023',
       achievements: [
-        'Developed and maintained 10+ React applications',
-        'Implemented CI/CD pipelines reducing deployment time by 50%',
-        'Collaborated with design team on UX improvements',
+        'Developed and maintained customer-facing APIs and UIs using Java with Spring Boot and JavaScript with React, serving millions of banking customers',
+        'Delivered 2 major releases encompassing 6 microservices to production with zero critical defects through comprehensive testing strategies',
       ],
     },
     {
-      title: 'Bachelor of Science in Computer Science',
-      company: 'University Name',
-      period: '2016 - 2020',
-      type: 'education',
+      title: 'Bachelor of Science in Mathematics',
+      company: 'University of Bristol',
+      period: '2017 - 2020',
       achievements: [
-        'Graduated with honors',
-        'Relevant coursework: Algorithms, Data Structures, Web Development',
+        'Learnt how to solve complex and absract problems with absolute clarity and rigor',
+        'Key modules: Logic, Statistics, Linear Algebra, Generalised Linear Models',
       ],
     },
   ];
@@ -57,7 +53,7 @@ const Experience: React.FC = () => {
           {experiences.map((item, index) => (
             <div
               key={index}
-              className={`timeline-item ${item.type} ${
+              className={`timeline-item ${index} ${
                 visibleItems.has(index) ? 'visible' : ''
               }`}
               onMouseEnter={() => handleItemVisible(index)}
