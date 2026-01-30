@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
     {
       title: 'Company Registraion Dashboard',
       description:
-        'Interactive dashboard visualising company registration data ready to be deployed and shared with organisation stakeholders',
+        'Interactive dashboard visualising company registration data ready to be deployed and shared with organisation stakeholders.',
       tags: ['Streamlit', 'Plotly', 'Python', 'GeoPandas'],
     },
     {
