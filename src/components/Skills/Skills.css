@@ -77,9 +77,13 @@
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 1160px) {
   .skills {
     padding: 60px 20px;
+  }
+
+  .skills-container {
+    max-width: 600px;
   }
 
   .skills .section-title {

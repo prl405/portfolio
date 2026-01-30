@@ -1,6 +1,6 @@
 import './Skills.css';
-import { faAws, faDocker, faGit, faHtml5, faJs, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faBolt, faBullseye, faDatabase, faDiamond, faRecycle, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faAws, faDocker, faGit, faHashnode, faHtml5, faJava, faJs, faNode, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBolt, faBullseye, faC, faChartBar, faDatabase, faDiamond, faEnvelopeOpenText, faLeaf, faLineChart, faRecycle, faRocket, faT, faTicket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { SkillCategory } from '../../types';
 
@@ -10,37 +10,37 @@ const Skills: React.FC = () => {
     {
       name: 'Languages',
       items: [
-        { name: 'JavaScript', fa: faJs, color: 'yellow'},
-        { name: 'TypeScript', fa: faDiamond, color: 'blue'},
+        { name: 'Java', fa: faJava, color: 'red'},
         { name: 'Python', fa: faPython, color: 'green'},
-        { name: 'HTML/CSS', fa: faHtml5, color: 'orange'},
+        { name: 'TypeScript', fa: faDiamond, color: 'blue'},
+        { name: 'C++', fa: faHashnode, color: 'green'}, 
       ],
     },
     {
       name: 'Frontend',
       items: [
         { name: 'React', fa: faReact, color: 'blue' },
-        { name: 'Next.js', fa: faNodeJs, color: 'black' },
-        { name: 'Redux', fa: faRecycle, color: 'blue'},
-        { name: 'Tailwind CSS', fa: faBullseye, color: 'blue'},
+        { name: 'Node.js', fa: faNodeJs, color: 'black' },
+        { name: 'Plotly', fa: faLineChart, color: 'blue'},
+        { name: 'HTML/CSS', fa: faHtml5, color: 'orange'},
       ],
     },
     {
       name: 'Backend',
       items: [
-        { name: 'Node.js', fa: faNodeJs, color: 'green' },
-        { name: 'Express', fa: faBolt, color: 'orange' },
-        { name: 'PostgreSQL', fa: faDatabase, color: 'blue' },
+        { name: 'Springboot', fa: faLeaf, color: 'green' },
         { name: 'MongoDB', fa: faDatabase, color: 'blue' },
+        { name: 'SQL', fa: faDatabase, color: 'blue' },
+        { name: 'FastAPI', fa: faBolt, color: 'green' },
       ],
     },
     {
-      name: 'Tools & Platforms',
+      name: 'Tools & Practices',
       items: [
+        { name: 'Sci-kit Learn', fa: faChartBar, color: 'blue' },
+        { name: 'Tensorflow', fa: faT, color: 'orange' },
         { name: 'Git', fa: faGit, color: 'red' },
-        { name: 'Docker', fa: faDocker, color: 'blue' },
-        { name: 'AWS', fa: faAws, color: 'orange' },
-        { name: 'CI/CD', fa: faRocket, color: 'red' },
+        { name: 'TDD/BDD', fa: faTicket, color: 'red' },
       ],
     },
   ];
