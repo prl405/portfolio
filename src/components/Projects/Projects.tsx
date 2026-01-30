@@ -4,45 +4,45 @@ import './Projects.css';
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'E-Commerce Platform',
+      title: 'Portfolio Website',
       description:
-        'A full-stack e-commerce platform with user authentication, product filtering, and payment integration.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      repoUrl: 'https://github.com',
+        'My personal portfolio website hosted on github, built using responsive design with minimalist styling.',
+      tags: ['React', 'Typescript','FontAwsome', 'Vite'],
+      repoUrl: 'https://github.com/prl405/portfolio',
     },
     {
-      title: 'Task Management App',
+      title: 'Career Success AI API',
       description:
-        'Collaborative task management application with real-time updates and team workspaces.',
-      tags: ['React', 'Firebase', 'Tailwind CSS'],
-      repoUrl: 'https://github.com',
+        'AI powered application for predicting starting salary, showing how a machine learning model can be integrated through a backed python REST API to a user friendly interface.',
+      tags: ['TensorFlow', 'FastAPI', 'Python', 'React'],
+      repoUrl: 'https://github.com/prl405/career_success',
     },
     {
-      title: 'Weather Dashboard',
+      title: 'Company Registraion Dashboard',
       description:
-        'Real-time weather dashboard with location search, forecasts, and interactive maps.',
-      tags: ['React', 'OpenWeather API', 'Charts.js'],
-      repoUrl: 'https://github.com',
+        'Interactive dashboard visualising company registration data ready to be deployed and shared with organisation stakeholders',
+      tags: ['Streamlit', 'Plotly', 'Python', 'GeoPandas'],
     },
     {
-      title: 'Blog Platform',
+      title: 'Third Person Arena Shooter',
       description:
-        'A modern blogging platform with markdown support, comments, and SEO optimization.',
-      tags: ['Next.js', 'Prisma', 'PostgreSQL', 'NextAuth.js'],
-      repoUrl: 'https://github.com',
+        'Realised translating game mechanices into code including player movement, shooting mechanics and enemy AI.',
+      tags: ['Unity Engine', 'C#', 'Game Development'],
+      repoUrl: 'https://play.unity.com/mg/other/third-person-arena',
     },
     {
-      title: 'Social Media Analytics',
+      title: 'Computer Vision: Digit Classifier',
       description:
-        'Analytics dashboard for tracking social media metrics and performance across platforms.',
-      tags: ['React', 'D3.js', 'Node.js', 'MongoDB'],
-      repoUrl: 'https://github.com',
+        'Image classification model using CNNs to accurately classify handwritten digits from the MNIST dataset.',
+      tags: ['TensorFlow', 'Python', 'Jupyter Notebook'],
+      repoUrl: 'https://github.com/prl405/digits',
     },
     {
-      title: 'AI Chat Application',
+      title: 'Palmer Penguins Analysis',
       description:
-        'Real-time chat application with AI-powered suggestions and natural language processing.',
-      tags: ['React', 'WebSocket', 'Python', 'OpenAI API'],
+        'Rigorous analysis of Palmer Penguins dataset using Python and machine learning methods.',
+      tags: ['Python', 'Scikit-learn', 'Numpy', 'Matplotlib'],
+      repoUrl: 'https://github.com/prl405/palmerpenguins',
     },
   ];
 
