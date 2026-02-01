@@ -17,12 +17,14 @@ const Projects: React.FC = () => {
         'AI powered application for predicting starting salary, showing how a machine learning model can be integrated through a backed python REST API to a user friendly interface.',
       tags: ['TensorFlow', 'FastAPI', 'Python', 'React'],
       repoUrl: 'https://github.com/prl405/career_success',
+      image: 'src/assets/career_success_shot.png',
     },
     {
       title: 'Company Registraion Dashboard',
       description:
         'Interactive dashboard visualising company registration data ready to be deployed and shared with organisation stakeholders.',
       tags: ['Streamlit', 'Plotly', 'Python', 'GeoPandas'],
+      image: 'src/assets/company_registration_shot.png',
     },
     {
       title: 'Third Person Arena Shooter',
