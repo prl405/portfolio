@@ -1,6 +1,6 @@
 import './Skills.css';
 import { faGit, faHashnode, faJava, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faBolt, faBrain, faChartBar, faDatabase, faDiamond, faHandshake, faLeaf, faLineChart, faNetworkWired, faPlusMinus, faT, faTicket, faWebAwesome } from '@fortawesome/free-solid-svg-icons';
+import { faBolt, faBrain, faChartBar, faDatabase, faDiamond, faHandshake, faJ, faLeaf, faLineChart, faNetworkWired, faPlusMinus, faT, faTicket, faWebAwesome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { SkillCategory } from '../../types';
 import { faFileClipboard } from '@fortawesome/free-regular-svg-icons/faFileClipboard';
@@ -15,6 +15,7 @@ const Skills: React.FC = () => {
         { name: 'Python', fa: faPython, color: 'green'},
         { name: 'TypeScript', fa: faDiamond, color: 'blue'},
         { name: 'C++', fa: faHashnode, color: 'green'},
+        { name: 'Julia', fa: faJ, color: 'purple'},
       ],
     },
     {

@@ -9,6 +9,7 @@ const Projects: React.FC = () => {
         'My personal portfolio website hosted on github, built using responsive design with minimalist styling.',
       tags: ['React', 'Typescript','FontAwsome', 'Vite'],
       repoUrl: 'https://github.com/prl405/portfolio',
+      image: 'src/assets/portfolio_shot.png'
     },
     {
       title: 'Career Success AI API',
@@ -29,6 +30,7 @@ const Projects: React.FC = () => {
         'Realised translating game mechanices into code including player movement, shooting mechanics and enemy AI.',
       tags: ['Unity Engine', 'C#', 'Game Development'],
       repoUrl: 'https://play.unity.com/mg/other/third-person-arena',
+      image: 'src/assets/arena_game_shot.png',
     },
     {
       title: 'Computer Vision: Digit Classifier',
@@ -36,6 +38,7 @@ const Projects: React.FC = () => {
         'Image classification model using CNNs to accurately classify handwritten digits from the MNIST dataset.',
       tags: ['TensorFlow', 'Python', 'Jupyter Notebook'],
       repoUrl: 'https://github.com/prl405/digits',
+      image: 'src/assets/digits_shot.png',
     },
     {
       title: 'Palmer Penguins Analysis',
@@ -43,6 +46,7 @@ const Projects: React.FC = () => {
         'Rigorous analysis of Palmer Penguins dataset using Python and machine learning methods.',
       tags: ['Python', 'Scikit-learn', 'Numpy', 'Matplotlib'],
       repoUrl: 'https://github.com/prl405/palmerpenguins',
+      image: 'src/assets/penguins_shot.png',
     },
   ];
 
@@ -69,8 +73,15 @@ const Projects: React.FC = () => {
                 if (e.key === 'Enter') handleProjectClick(project.repoUrl);
               }}
             >
-              <div className="project-image-placeholder">
-                <span className="placeholder-text">Project Screenshot</span>
+              <div className="project-photo-frame">
+                  {project.image ? (
+                    <img className='project-photo'
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                    />
+                  ) : (
+                    <span className="placeholder-text">Project Screenshot</span>
+                  )}
               </div>
 
               <div className="project-content">
