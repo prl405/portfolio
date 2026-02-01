@@ -11,8 +11,8 @@ describe('Skills Component', () => {
   it('should render skill categories', () => {
     render(<Skills />);
     expect(screen.getByText('Languages')).toBeInTheDocument();
-    expect(screen.getByText('Frontend')).toBeInTheDocument();
-    expect(screen.getByText('Backend')).toBeInTheDocument();
+    expect(screen.getByText('Full Stack Engineering')).toBeInTheDocument();
+    expect(screen.getByText('AI & Data Science')).toBeInTheDocument();
     expect(screen.getByText('Tools & Practices')).toBeInTheDocument();
   });
 

@@ -21,8 +21,9 @@ const Experience: React.FC = () => {
       company: 'Sparta Global',
       period: '2021 - 2023',
       achievements: [
-        'Developed and maintained customer-facing APIs and UIs using Java with Spring Boot and JavaScript with React, serving millions of banking customers',
+        'Developed and maintained customer-facing APIs and UIs using Java with Spring Boot and JavaScript with React, serving millions of customers',
         'Delivered 2 major releases encompassing 6 microservices to production with zero critical defects through comprehensive testing strategies',
+        'Participated in over 40 sprint cycles following Agile Scrum methodology, regularly creating user stories, documenting technical work, and presenting progress to client stakeholders'
       ],
     },
     {

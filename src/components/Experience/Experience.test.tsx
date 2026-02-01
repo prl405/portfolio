@@ -23,6 +23,6 @@ describe('Experience Component', () => {
 
   it('should render achievement bullets', () => {
     render(<Experience />);
-    expect(screen.getByText(/Developed and maintained customer-facing APIs and UIs using Java with Spring Boot and JavaScript with React, serving millions of banking customers/)).toBeInTheDocument();
+    expect(screen.getByText(/Developed and maintained customer-facing APIs and UIs using Java with Spring Boot and JavaScript with React, serving millions of customers/)).toBeInTheDocument();
   });
 });

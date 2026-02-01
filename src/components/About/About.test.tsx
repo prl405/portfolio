@@ -5,20 +5,22 @@ import About from './About';
 describe('About Component', () => {
   it('should render name and title', () => {
     render(<About />);
-    expect(screen.getByText('Your Name')).toBeInTheDocument();
+    expect(screen.getByText('Pedro Liedl')).toBeInTheDocument();
     expect(screen.getByText('Full Stack Software Engineer')).toBeInTheDocument();
   });
 
   it('should render bio text', () => {
     render(<About />);
-    expect(screen.getByText(/Passionate full-stack developer/)).toBeInTheDocument();
+    expect(screen.getByText(/I'm a full-stack software engineer who/)).toBeInTheDocument();
   });
 
   it('should render skill tags', () => {
     render(<About />);
+    expect(screen.getByText('Java')).toBeInTheDocument();
+    expect(screen.getByText('Python')).toBeInTheDocument();
     expect(screen.getByText('React')).toBeInTheDocument();
-    expect(screen.getByText('TypeScript')).toBeInTheDocument();
-    expect(screen.getByText('Node.js')).toBeInTheDocument();
+    expect(screen.getByText('API Development')).toBeInTheDocument();
+    expect(screen.getByText('AI/Machine Learning')).toBeInTheDocument();
   });
 
   it('should render social links', () => {
@@ -32,6 +34,6 @@ describe('About Component', () => {
 
   it('should render photo placeholder', () => {
     render(<About />);
-    expect(screen.getByText('Professional Photo')).toBeInTheDocument();
+    expect(screen.getByRole('img')).toBeInTheDocument();
   });
 });
