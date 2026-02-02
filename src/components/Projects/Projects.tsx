@@ -1,5 +1,12 @@
 import type { Project } from '../../types';
 import './Projects.css';
+import portfolio_shot from '../../assets/portfolio_shot.png';
+import career_success_shot from '../../assets/career_success_shot.png';
+import company_registration_shot from '../../assets/company_registration_shot.png';
+import arena_game_shot from '../../assets/arena_game_shot.png';
+import digits_shot from '../../assets/digits_shot.png';
+import penguins_shot from '../../assets/penguins_shot.png';
+
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
@@ -9,7 +16,7 @@ const Projects: React.FC = () => {
         'My personal portfolio website hosted on github, built using responsive design with minimalist styling.',
       tags: ['React', 'Typescript','FontAwsome', 'Vite'],
       repoUrl: 'https://github.com/prl405/portfolio',
-      image: 'src/assets/portfolio_shot.png'
+      image: portfolio_shot
     },
     {
       title: 'Career Success AI API',
@@ -17,14 +24,14 @@ const Projects: React.FC = () => {
         'AI powered application for predicting starting salary, showing how a machine learning model can be integrated through a backed python REST API to a user friendly interface.',
       tags: ['TensorFlow', 'FastAPI', 'Python', 'React'],
       repoUrl: 'https://github.com/prl405/career_success',
-      image: 'src/assets/career_success_shot.png',
+      image: career_success_shot,
     },
     {
       title: 'Company Registraion Dashboard',
       description:
         'Interactive dashboard visualising company registration data ready to be deployed and shared with organisation stakeholders.',
       tags: ['Streamlit', 'Plotly', 'Python', 'GeoPandas'],
-      image: 'src/assets/company_registration_shot.png',
+      image: company_registration_shot,
     },
     {
       title: 'Third Person Arena Shooter',
@@ -32,7 +39,7 @@ const Projects: React.FC = () => {
         'Realised translating game mechanices into code including player movement, shooting mechanics and enemy AI.',
       tags: ['Unity Engine', 'C#', 'Game Development'],
       repoUrl: 'https://play.unity.com/mg/other/third-person-arena',
-      image: 'src/assets/arena_game_shot.png',
+      image: arena_game_shot,
     },
     {
       title: 'Computer Vision: Digit Classifier',
@@ -40,7 +47,7 @@ const Projects: React.FC = () => {
         'Image classification model using CNNs to accurately classify handwritten digits from the MNIST dataset.',
       tags: ['TensorFlow', 'Python', 'Jupyter Notebook'],
       repoUrl: 'https://github.com/prl405/digits',
-      image: 'src/assets/digits_shot.png',
+      image: digits_shot,
     },
     {
       title: 'Palmer Penguins Analysis',
@@ -48,7 +55,7 @@ const Projects: React.FC = () => {
         'Rigorous analysis of Palmer Penguins dataset using Python and machine learning methods.',
       tags: ['Python', 'Scikit-learn', 'Numpy', 'Matplotlib'],
       repoUrl: 'https://github.com/prl405/palmerpenguins',
-      image: 'src/assets/penguins_shot.png',
+      image: penguins_shot,
     },
   ];
 

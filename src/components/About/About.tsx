@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './About.css';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import linkedin_portrait from '../../assets/linkedin_portrait.jpg';
 
 const About: React.FC = () => {
   return (
@@ -48,7 +49,7 @@ const About: React.FC = () => {
 
           <div className="about-photo">
             <div className="photo-placeholder">
-              <img src="src\assets\linkedin portrait.jpg" />
+              <img src={linkedin_portrait} alt="LinkedIn Profile Picture" />
             </div>
           </div>
         </div>
