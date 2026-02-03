@@ -182,6 +182,7 @@
 @media (max-width: 768px) {
   .projects {
     padding: 60px 20px;
+    scroll-margin-top: 250px;
   }
 
   .projects .section-title {

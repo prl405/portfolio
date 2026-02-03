@@ -7,7 +7,6 @@ import type { NavItem } from '../../types';
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // TODO: Reconsider emojis
   const navItems: NavItem[] = [
     { label: 'About', id: 'about', fa: faUser, color: 'black' },
     { label: 'Experience', id: 'experience', fa: faBriefcase, color: 'brown' },
@@ -18,7 +17,7 @@ const Navigation: React.FC = () => {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start'});
       setIsOpen(false);
     }
   };
@@ -36,7 +35,6 @@ const Navigation: React.FC = () => {
                 onClick={() => handleScroll(item.id)}
               >
                 <FontAwesomeIcon icon={item.fa} color={item.color} />
-                {/* <span className="nav-icon">{item.icon}</span> */}
                 <span>{item.label}</span>
               </button>
             ))}
@@ -65,7 +63,6 @@ const Navigation: React.FC = () => {
               onClick={() => handleScroll(item.id)}
             >
               <FontAwesomeIcon icon={item.fa} color={item.color} />
-              {/* <span className="nav-icon">{item.icon}</span> */}
               <span>{item.label}</span>
             </button>
           ))}

@@ -183,6 +183,7 @@
 @media (max-width: 768px) {
   .about {
     padding: 60px 20px;
+    scroll-margin-top: 250px;
   }
 
   .about-content {
